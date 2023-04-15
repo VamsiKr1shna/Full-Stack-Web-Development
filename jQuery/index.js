@@ -1,1 +1,4 @@
-$("h1").css("color", "red");
+$("button").click(function (e) { 
+    $("h1").fadeToggle();
+    
+});
