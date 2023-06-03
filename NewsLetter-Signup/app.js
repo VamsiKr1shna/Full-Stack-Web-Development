@@ -33,16 +33,16 @@ app.post("/", function (req, res) {
 
   const options = {
     method: "POST",
-    auth: "vulcan1601:f8e9d8b740ea45584fc83872332ce773-us21",
+    auth: "vulcan1601:f8e9d8b740ea45584fc83872332ce773-us2",
   };
 
   const request = https.request(url, options, function (response) {
     response.on("data", function (data) {
       console.log(JSON.parse(data));
       if (response.statusCode == 200) {
-        res.sendFile(__dirname+"/success.html");
+        res.sendFile(__dirname + "/success.html");
       } else {
-        res.sendFile(__dirname+"/failure.html");
+        res.sendFile(__dirname + "/failure.html");
       }
     });
   });
@@ -51,7 +51,11 @@ app.post("/", function (req, res) {
   request.end();
 });
 
-app.listen(3000, function () {
+app.post("/failure", function (rep, res) {
+  res.redirect("/");
+});
+
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running on 3000");
 });
 
