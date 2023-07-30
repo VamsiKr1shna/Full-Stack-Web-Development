@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^9.2.9",
+    "qr-image": "^3.2.0"
+  },
+  "name": "qr-code-project",
+  "version": "1.0.0",
+  "description": "a qr code generator",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vamsi Krishna",
+  "license": "ISC"
+}
