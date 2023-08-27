@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "react-player": "^2.12.0",
+    "react-video-player": "^1.0.0",
+    "serialport": "^11.0.1",
+    "socket.io": "^4.7.2",
+    "websocket": "^1.0.34"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "iith-workshop",
+  "version": "1.0.0",
+  "description": "IITH workshop ",
+  "main": "index.js",
+  "author": "Vamsi Krishna",
+  "license": "ISC"
+}

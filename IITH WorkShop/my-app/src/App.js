@@ -1,18 +1,25 @@
 import logo from './logo.svg';
 import "./App.css";
 import { useState } from "react";
-import Card from "./Card";
-import Com from "./Com";
+//import Card from "./Card";
+//import Com from "./Com";
+import Product from './Product';
 function App() {
-  let [count, setCount] = useState(0);
+  //let [count, setCount] = useState(0);
+
+
+  const fetchAPI = ()=>{
+    let ran = Math.floor(Math.random()*100)+1;
+    console.log(ran);
+    fetch('https://jsonplaceholder.typicode.com/todos/'+ran)
+      .then(response => response.json())
+      .then(json => console.log(json)) 
+  }
+   
   return (
     <div className="App">
-      count = {count }
-      <button onClick={() => {setCount(count + 1)}}>UpdateCount</button>
-      <Card device={count}/>
-      <Com age1 = {20}
-           age2 = {30}
-           age3 = {40} />
+      <button onClick={() =>fetchAPI()}>Update</button>
+      {/* <Product param = json/> */}
     </div>
   );
 }
