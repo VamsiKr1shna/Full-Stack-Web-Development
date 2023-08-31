@@ -30,5 +30,5 @@ app.delete("/user/vamsi",(req,res)=>{
 })
 
 app.listen(port, () => {
-  console.log("server is started!", port);
+  console.log(`server is started! ${port}`);
 });
