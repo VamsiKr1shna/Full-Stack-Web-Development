@@ -8,12 +8,19 @@ body {
 	font-size: 18px;
 }
 .div_center {
-  display: flex;
+  	display: flex;
 	justify-content: center;
 	align-items:center;
 
 }
-
+.button{
+	padding-left: 50px;
+	padding-right: 50px;
+	border-color: black;
+	font-size: 45px;
+	background-color: #ff6347;
+}
 #timer{
-  
+	font-weight: bold;
+	font-size: 100px;
 }
