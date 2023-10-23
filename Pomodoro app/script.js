@@ -1,2 +1,4 @@
-var test = document.getElementById("timer");
-console.log(test);
+$("button").click(function (e) { 
+    console.log("test worked");
+    
+});
